@@ -1,0 +1,32 @@
+### Auth Server
+GET http://localhost:4000/api/v1/
+
+### All users
+GET http://localhost:4000/api/v1/user/all
+
+### Add User
+POST http://localhost:4000/api/v1/user/signup
+Content-Type: application/json
+
+{
+    "email": "admin@home.com",
+    "password": "password",
+    "isAdmin": true
+}
+
+### Login the user
+POST http://localhost:4000/api/v1/user/login
+Content-Type: application/json
+
+{
+    "name": "Admin",
+    "password": "password"
+}
+
+###
+DELETE http://localhost:4000/api/v1/user/logout
+Content-Type: application/json
+
+{
+   "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0MWJmZjE0LTQ4MmEtNDYwZC04YWE3LWI4MzMyNGFkMDZiYSIsIm5hbWUiOiJBZG1pbiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYwNjA4OTI1OH0.sziiPT4F7uYUXHOUzB4evpf84I_bn8W6dOE4xWUu8PA"
+}
