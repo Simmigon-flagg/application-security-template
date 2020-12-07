@@ -1,11 +1,12 @@
 ### Auth Server
-GET http://localhost:4000/api/v1/
+GET http://localhost:4000/api/v1/user/home
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmY2RjMWRkN2QxZDcwMTc4ODcwOTIzNyIsImVtYWlsIjoiYWRtaW5AaG9tZS5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MDczMjIxOTMsImV4cCI6MTYwNzQwODU5M30.hdyJUY1kRtN8MRz_QXhN_qdKU2K0P7D-fqUPX7bqb6
 
 ### All users
-GET http://localhost:4000/api/v1/user/all
+GET http://localhost:4000/api/v1/auth/all
 
 ### Add User
-POST http://localhost:4000/api/v1/user/signup
+POST http://localhost:4000/api/v1/auth/signup
 Content-Type: application/json
 
 {
@@ -15,18 +16,15 @@ Content-Type: application/json
 }
 
 ### Login the user
-POST http://localhost:4000/api/v1/user/login
+POST http://localhost:4000/api/v1/auth/login
 Content-Type: application/json
 
 {
-    "name": "Admin",
+    "email": "admin@home.com",
     "password": "password"
 }
 
 ###
-DELETE http://localhost:4000/api/v1/user/logout
-Content-Type: application/json
+DELETE http://localhost:4000/api/v1/auth/logout
 
-{
-   "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0MWJmZjE0LTQ4MmEtNDYwZC04YWE3LWI4MzMyNGFkMDZiYSIsIm5hbWUiOiJBZG1pbiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYwNjA4OTI1OH0.sziiPT4F7uYUXHOUzB4evpf84I_bn8W6dOE4xWUu8PA"
-}
+
