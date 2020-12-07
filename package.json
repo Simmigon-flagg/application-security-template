@@ -1,0 +1,8 @@
+{
+  "name": "application-security-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Simmigon-flagg/application-security-template.git",
+  "author": "Simmigon <simmigonflagg@gmail.com>",
+  "license": "MIT"
+}
