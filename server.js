@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 4000;
 //   return response.json(users);
 // });
 
-app.use(morgan());
+app.use(morgan("tiny"));
 app.use("/api/v1/auth", auth);
 app.use("/api/v1/user", user);
 

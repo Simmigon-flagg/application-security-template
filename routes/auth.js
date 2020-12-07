@@ -2,6 +2,7 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
+// Mongo database
 const Users = require("../models/Users");
 
 router.post("/signup", async (request, response) => {
